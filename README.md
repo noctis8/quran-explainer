@@ -22,15 +22,9 @@ cd backend
 npm install
   ```
 3. **Start the backend server:**
-- Development mode (get full Quran data):
   ```
-  npm run dev
+  npm start
   ```
-- Production mode (Limited data):
-  ```
-  npm run prod
-  ```
-
 ---
 
 ### 🖥 Frontend Setup
