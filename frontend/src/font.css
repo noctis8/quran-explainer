@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Fustat';
+    src: url('./fonts/Fustat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    font-family: 'Fustat', cursive;
+}
+
+@font-face {
+    font-family: 'quranic';
+    src: url('./fonts/alfont_com_AlFont_com_MCS-Diwan-Jaly-S_U-1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.arabic-font {
+    font-family: 'quranic', 'Fustat';
+}

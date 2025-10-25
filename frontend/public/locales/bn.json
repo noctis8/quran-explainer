@@ -1,0 +1,60 @@
+{
+  "navbar": {
+    "title": "কোরআন ব্যাখ্যাতা"
+  },
+  "tooltip": {
+    "next_verse": "পরবর্তী আয়াত",
+    "previous_verse": "পূর্ববর্তী আয়াত",
+    "next_page": "পরবর্তী পৃষ্ঠা",
+    "previous_page": "পূর্ববর্তী পৃষ্ঠা"
+  },
+  "settings": {
+    "title": "সেটিংস",
+    "theme": {
+      "theme": "থিম",
+      "dark_mode": "ডার্ক থিম",
+      "light_mode": "লাইট থিম",
+      "sepia_mode": "সেপিয়া"
+    },
+    "quran_font": {
+      "font": "ফন্ট স্টাইল",
+      "tajweed": "তাজবিদ",
+      "imlaei": "ইমলায়",
+      "simple": "সরল"
+    }
+  },
+  "home": {
+    "start_reading": "পড়া শুরু করুন",
+    "description": "পরিপূর্ণ শ্রেষ্ঠ কোরআন অধ্যয়ন করুন এবং বিস্তারিত বৈজ্ঞানিক ব্যাখ্যা পান",
+    "surah_list_title": "সূরা সমূহ",
+    "verses": "আয়াত",
+    "ascending": "ক্রমবর্ধমান",
+    "descending": "ক্রমহ্রাসমান"
+  },
+  "dropdowns": {
+    "select_scholar": "পণ্ডিত",
+    "select_chapter": "অধ্যায়",
+    "select_verse": "আয়াত",
+    "select_page": "পৃষ্ঠা",
+    "select_language": "ভাষা"
+  },
+  "messages": {
+    "page_unavailable": "পৃষ্ঠা উপলব্ধ নয়",
+    "translation_unavailable": "অনুবাদ উপলব্ধ নেই",
+    "explanation_unavailable": "কোন ব্যাখ্যা উপলব্ধ নেই। উপরের তালিকা থেকে একজন পণ্ডিত নির্বাচন করুন।",
+    "explanation_language_unavailable": "এই ভাষার জন্য ব্যাখ্যা উপলব্ধ নেই।",
+    "translation": "অনুবাদ",
+    "original": "মূল পাঠ",
+    "basmalah": "আল্লাহর নামে, যিনি পরম করুণাময়, অতি দয়ালু"
+  },
+  "tajweed": {
+    "gunnah": "গুন্নাহ",
+    "qalqala": "কলকলা",
+    "ikhfa": "ইখফা",
+    "idgham": "ইদগাম",
+    "madd": "মদ্দ",
+    "silent_letter": "নীরব বর্ণ",
+    "hamzat_wasl": "হামজত ওয়সল",
+    "hamzat_qat": "হামজত কাট্"
+  }
+}

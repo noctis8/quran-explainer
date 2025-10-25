@@ -1,0 +1,66 @@
+/* when the api will be fixed we will import this file to the global.css */
+.tajweed {
+    display: inline;
+    font-weight: inherit;
+}
+
+/* Necessary madd */
+.madda_necessary {
+    color: red;
+    font-weight: 500;
+}
+
+/* Connected madd */
+.madda_obligatory {
+    color: white;
+    font-weight: 500;
+}
+
+.madda_permissible {
+    color: #FFA500;
+}
+
+.madda_normal {
+    color: #fd7a7a;
+}
+
+/* Qalqalah (Echoing sound) */
+.qalaqah {
+    color: #81fd85;
+    font-weight: 500;
+}
+
+.ikhafa,
+.ikhafa_shafawi {
+    color: #9C27B0;
+}
+
+/* Idgham (Merging) */
+.idgham_ghunnah,
+.idgham_shafawi {
+    color: #2196F3;
+    font-weight: 500;
+}
+
+/* Ghunnah (Nasalization) */
+.ghunnah {
+    color: #00BCD4;
+}
+
+/* Lam Shamsiyah */
+.laam_shamsiyah {
+    color: #FF9800;
+    font-weight: 500;
+}
+
+/* Silent letters */
+.slnt,
+.ham_wasl{
+    opacity: 0.5;
+    color: #999;
+}
+
+/* Verse end marker */
+.end {
+    display: none       /* remove the verse number that it comes with the text cz we already have handled htis task */
+}

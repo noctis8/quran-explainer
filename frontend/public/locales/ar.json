@@ -1,0 +1,58 @@
+{
+  "navbar": {
+    "title": "مُفسّر القرآن"
+  },
+  "tooltip": {
+    "next_verse": "الاية التالية",
+    "previous_verse":"الاية السابقة",
+    "next_page": "الصفحة التالية",
+    "previous_page": "الصفحة السابقة"
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "theme": {
+      "theme": "الوضع",
+      "dark_mode": "الوضع الليلي",
+      "light_mode": "الوضع المشمس ",
+      "sepia_mode": "سيبيا"
+    },
+    "quran_font": {
+      "font": "خط القرآن",
+      "tajweed": "تجويد",
+      "imlaei": "إملائي",
+      "simple": "بسيط"
+    }
+  },
+  "home": {
+    "start_reading": "ابدأ القراءة",
+    "description": "أدرس القرآن الكريم مع تفسيرات شاملة",
+    "surah_list_title": "السور",
+    "verses": "آيات",
+    "ascending": "تصاعدي",
+    "descending": "تنازلي"
+  },
+  "dropdowns": {
+    "select_scholar": "المفسّر",
+    "select_chapter": "السورة",
+    "select_verse": "الآية",
+    "select_page": "الصفحة",
+    "select_language": "اللغة"
+  },
+    "messages": {
+    "page_unavailable": "الترجمة غير متوفرة",
+    "translation_unavailable": "الترجمة غير متوفرة",
+    "explanation_unavailable": "لا يوجد تفسير متاح. الرجاء اختيار مفسر.",
+    "explanation_language_unavailable": "لا تتوفر الترجمة المحددة لهذه اللغة.",
+    "basmalah": "بسم الله الرحمن الرحيم"
+  },
+  "tajweed": {
+    "gunnah": "غنة",
+    "qalqala": "قلقلة",
+    "ikhfa": "إخفاء",
+    "idgham": "إدغام",
+    "madd": "مد",
+    "silent_letter": "حرف ساكن",
+    "hamzat_wasl": "همزة وصل",
+    "hamzat_qat": "همزة قطع"
+  }
+}

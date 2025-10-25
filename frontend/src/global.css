@@ -1,0 +1,172 @@
+@import "tailwindcss";
+@import "./font.css";
+
+/* For completeness (old IE/Edge legacy) */
+html {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg);
+    color: var(--primary);
+}
+
+/* themes variables */
+/* default will be light */
+:root {
+    --bg: white;
+    --light-bg: #e8faff;
+    --primary-bg: #edf5ff;
+    --second-bg: #d5edee;
+    --third-bg: #f9fafb;        /* hover */
+    --fourth-bg: #ebf1f6;        /* hover */
+    --primary: black;
+    --second: #666;
+    --third: #D4AF37;
+    --verse: #00699c;
+    --active-verse: #5FA160;
+    --prophet-parole: #009693;
+    --person: #fe8d3a;
+    --btn1-f: #2b7fff;
+    --btn1-t: #00b8db;
+    --btn2-f: #74e7bf;
+    --btn2-t: #009688;
+}
+
+.theme-dark {
+    --bg: #1b212f;
+    --light-bg: #48486b47;
+    --primary-bg: #364152;
+    --second-bg: #48486b47;
+    --third-bg: #1b212ff0;        /* hover */
+    --fourth-bg: #48486b47;        /* hover */
+    --primary: white;
+    --second: #ccc;
+    --third: #bca045;
+    --verse: #aabfc8;
+    --active-verse: #6a8592;
+    --prophet-parole: #00b4b1;
+    --person: #fe8d3a;
+    --btn1-f: #2ca48f;
+    --btn1-t: #2ca48f;
+    --btn2-f: #2ca48f;
+    --btn2-t: #2ca48f;
+}
+
+.theme-sepia {
+    --bg: #f8ebd5;
+    --light-bg: #fff7ea;        /* navbar color */
+    --primary-bg: #eddec3;
+    --second-bg: #f1e3cc;
+    --third-bg: rgba(239, 226, 205);        /* hover */
+    --fourth-bg: rgba(216, 207, 191, 0.56);        /* hover */
+    --primary: #413f3c;
+    --second: #4c4c4c;
+    --third: #D4AF37;
+    --verse: #6d5e44;;
+    --active-verse: #369b72;
+    --prophet-parole: #7d5d51;
+    --person: #fe8d3a;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.75rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    background-color: var(--primary-bg);
+    color: var(--verse);
+    cursor: pointer;
+    border: 2px solid var(--light-bg);
+    transition: all 0.2s ease;
+}
+@media (max-width: 768px) {
+    .btn {
+        padding: 0.5rem 1.35rem;
+        font-size: 15px;
+    }
+}
+.btn:hover {
+    transform: translateY(1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    border-color: #D4AF37;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+}
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+button {
+    cursor: pointer;
+}
+
+/* scroll style */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--third);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* loading style */
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.animation-delay-300 {
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+
+.loader {
+    width: 60px;
+    aspect-ratio: 4;
+    --_g: no-repeat radial-gradient(circle closest-side,
+    var(--bg) 75%,          /* Inner dot color, 70% of the size */
+    var(--light-bg) 76% 93%, /* Border color, from 71% to 90% */
+    #0000 94%                /* Transparent outside */
+    );
+    background:
+            var(--_g) 0%   50%,
+            var(--_g) 50%  50%,
+            var(--_g) 100% 50%;
+    background-size: calc(100%/3) 100%;
+    animation: l7 1s infinite linear;
+}
+
+@keyframes l7 {
+    33%{background-size:calc(100%/3) 0%  ,calc(100%/3) 100%,calc(100%/3) 100%}
+    50%{background-size:calc(100%/3) 100%,calc(100%/3) 0%  ,calc(100%/3) 100%}
+    66%{background-size:calc(100%/3) 100%,calc(100%/3) 100%,calc(100%/3) 0%  }
+}

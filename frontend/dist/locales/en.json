@@ -1,0 +1,60 @@
+{
+  "navbar": {
+    "title": "Quran Explainer"
+  },
+  "tooltip": {
+    "next_verse": "Next Verse",
+    "previous_verse": "Previous Verse",
+    "next_page": "Next Page",
+    "previous_page": "Previous Page"
+  },
+  "settings": {
+    "title": "Settings",
+    "theme": {
+      "theme": "Theme",
+      "dark_mode": "Dark Theme",
+      "light_mode": "Light Theme",
+      "sepia_mode": "Sepia"
+    },
+    "quran_font": {
+      "font": "font style",
+      "tajweed": "Tajweed",
+      "imlaei": "Imlaei",
+      "simple": "simple"
+    }
+  },
+  "home": {
+    "start_reading": "Start reading",
+    "description": "Study the Noble Quran with Comprehensive Scholarly Interpretations",
+    "surah_list_title": "Surahs",
+    "verses": "verses",
+    "ascending": "Ascending",
+    "descending": "Descending"
+  },
+  "dropdowns": {
+    "select_scholar": "scholar",
+    "select_chapter": "chapter",
+    "select_verse": "verse",
+    "select_page": "page",
+    "select_language": "language"
+  },
+  "messages": {
+    "page_unavailable": "page unavailable.",
+    "translation_unavailable": "Translation unavailable.",
+    "explanation_unavailable": "no explication available. please select a scholar from the list above.",
+    "explanation_language_unavailable": "no explication available for this language.",
+    "translation": "Translation",
+    "original": "Original",
+    "basmalah": "In the name of Allah, the Most Gracious, the Most Merciful"
+  },
+  "tajweed": {
+      "gunnah": "Gunnah",
+      "qalqala": "Qalqala",
+      "ikhfa": "Ikhfa",
+      "idgham": "Idgham",
+      "madd": "Madd",
+      "silent_letter": "Silent Letter",
+      "hamzat_wasl": "Hamzat Wasl",
+      "hamzat_qat": "Hamzat Qat"
+  }
+}
