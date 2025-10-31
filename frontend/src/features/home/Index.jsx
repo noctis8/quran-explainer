@@ -1,13 +1,21 @@
 import { Link } from 'react-router-dom';
 import {useStarfield} from "../../hooks/useStarfield.jsx";
 import { useTranslation } from 'react-i18next';
+import {useEffect, useState} from "react";
 
 const Index = () => {
-
     const { t } = useTranslation();
 
     // bg animation
-    const canvasRef = useStarfield()
+    const canvasRef = useStarfield();
+
+    // check if we user have already read some verses to show different content
+    const [content, setContent] = useState(t('home.start_reading'));
+    useEffect(() => {
+        if (localStorage.getItem('app-state')) {
+            setContent(t('home.continue_reading'))
+        }
+    }, []);
 
     return (
         <>
@@ -24,7 +32,7 @@ const Index = () => {
                     <h1 className='animation-delay-250 animate-fade-in-up max-w-[60%] font-bold text-[clamp(1.25rem,4vw,2.25rem)] text-center'>
                         {t('home.description')}
                     </h1>
-                    <Link to={`/quran`} className='btn'>{t('home.start_reading')}</Link>
+                    <Link to={`/quran`} className='btn'>{content}</Link>
                 </div>
             </div>
         </>

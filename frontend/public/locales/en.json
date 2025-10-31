@@ -25,8 +25,8 @@
   },
   "home": {
     "start_reading": "Start reading",
-    "description": "Study the Noble Quran with Comprehensive Scholarly Interpretations",
-    "surah_list_title": "Surahs",
+    "continue_reading": "Continue reading",
+    "description": "Study the Noble Quran with Comprehensive Scholarly Interpretations",    "surah_list_title": "Surahs",
     "verses": "verses",
     "ascending": "Ascending",
     "descending": "Descending"
