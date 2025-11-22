@@ -7,7 +7,7 @@ const Navbar = () => {
     const { t } = useTranslation();
     return (
         <nav className="p-4 flex justify-between items-center shadow-xs relative z-90">
-            <div className="navbar-container font-bold text-xl md:text-2xl">
+            <div className="navbar-container font-bold text-[22px] md:text-2xl">
                 <a href="/" className="navbar-logo">{t('navbar.title')}</a>
             </div>
             <div className="navbar-links flex items-center gap-1 md:gap-4">

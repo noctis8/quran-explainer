@@ -35,7 +35,7 @@ const SurahPage = ({ t, lastVerse, arabicLang, setArabicLang }) => {
     const minimizedChapters = useMemo(() => minimalizeChapters(chapters, selectedLanguage), [chapters]);
 
     return (
-        <div className={'surah-page-containter rounded-2xl space-y-2 py-2 px-4 bg-[var(--light-bg)]'}>
+        <div className={'surah-page-containter rounded-2xl space-y-2 py-2 px-2 md:px-4 bg-[var(--light-bg)]'}>
             <div className={"flex flex-wrap gap-2 sm:flex-row-reverse justify-between"}>
                 <div className={'surah-verse-list sm:justify-end flex justify-center gap-4'}>
                     <Dropdown description={t("dropdowns.select_verse")} currentVal={{ verse_id: verseId }} data={verseData} />

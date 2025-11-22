@@ -58,18 +58,18 @@ export const SurahsListLoader = () => {
         <div className="w-full" aria-hidden="true">
             <div style={gridStyle}>
                 {Array.from({ length: totalCards }).map((_, index) => (
-                    <div key={index} style={cardStyle} className="surah-skeleton">
+                    <div key={index} style={cardStyle} className="surah-skeleton skeleton-shimmer">
                         <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
-                            <div style={titleStyle} />
+                            <div style={titleStyle} className="skeleton-shimmer" />
                         </div>
 
                         <div style={{ width: '100%', marginTop: 8 }}>
-                            <div style={{ height: 8, width: '30%', borderRadius: 4, background: 'var(--card-subtitle, #374151)', marginBottom: 10 }} />
+                            <div style={{ height: 8, width: '30%', borderRadius: 4, background: 'var(--card-subtitle, #374151)', marginBottom: 10 }} className="skeleton-shimmer" />
                             <div style={{ borderTop: "1px solid #e0e0e0", marginTop: "4px", height: 1, background: 'var(--card-bg, #0b1220)', marginBottom: 8 }} />
                             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                                    <div style={{ width: 20, height: 20, borderRadius: '50%', background: 'var(--card-subtitle, #374151)' }} />
-                                    <div style={smallRect} />
+                                    <div style={{ width: 20, height: 20, borderRadius: '50%', background: 'var(--card-subtitle, #374151)' }} className="skeleton-shimmer" />
+                                    <div style={smallRect} className="skeleton-shimmer" />
                                 </div>
                             </div>
                         </div>

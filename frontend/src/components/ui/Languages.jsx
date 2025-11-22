@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import i18n from '../../i18n';
 import useLanguageStore from '../../stores/languageStore.js';
 import { lang_code_to_name } from "../../data.js";
+import { Languages as LanguagesIcon } from 'lucide-react';
 
 const languages = [
     { code: 'ar', label: 'العربية' },
@@ -68,9 +69,7 @@ const Languages = () => {
                 className={`${isOpen ? "bg-[var(--fourth-bg)]" : ""} cursor-pointer p-2 rounded-full hover:bg-[var(--fourth-bg)] transition-colors duration-200 flex items-center justify-center`}
                 aria-label={t('dropdowns.select_language')}
             >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.87 15.07L10.33 12.56L10.36 12.53C12.1 10.59 13.34 8.36 14.07 6H17V4H10V2H8V4H1V6H12.17C11.5 7.92 10.44 9.75 9 11.35C8.07 10.32 7.3 9.19 6.69 8H4.69C5.42 9.63 6.42 11.17 7.67 12.56L2.58 17.58L4 19L9 14L12.11 17.11L12.87 15.07ZM18.5 10H16.5L12 22H14L15.12 19H19.87L21 22H23L18.5 10ZM15.88 17L17.5 12.67L19.12 17H15.88Z" fill="currentColor"/>
-                </svg>
+                <LanguagesIcon size={24} />
             </button>
 
             {isOpen && (

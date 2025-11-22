@@ -16,6 +16,9 @@ const PageLoader = () => (
     </div>
 )
 
+// TODO: 
+// - add chapter info
+
 function App() {
     return (
         <BrowserRouter>

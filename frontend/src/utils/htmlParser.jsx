@@ -71,6 +71,13 @@ export function HighlightedTextexplanation({ text, activeVerse }) {
         return placeholder;
     });
 
+    const curlyPlaceholders = [];
+    protectedText = protectedText.replace(/\{([^}]+)\}/g, (match, content) => {
+        const placeholder = `__CURLY_${curlyPlaceholders.length}__`;
+        curlyPlaceholders.push(content);
+        return placeholder;
+    });
+
     const quoteRegex = /(["'])([^"']+?)\1/g;
     let highlightedText = protectedText.replace(quoteRegex, (match, quoteChar, quotedText) => {
         if (match.includes('style=') || match.includes('--')) return match;
@@ -96,10 +103,12 @@ export function HighlightedTextexplanation({ text, activeVerse }) {
         highlightedText = highlightedText.replace(`__BRACKET_${index}__`, `[${content}]`);
     });
 
-    highlightedText = highlightedText.replace(
-        /style="([^"]*?)(--[^";]+)[^"]*?"/g,
-        (match, before) => (!before.includes('var(') ? `style="${before}"` : match)
-    );
+    curlyPlaceholders.forEach((content, index) => {
+        highlightedText = highlightedText.replace(
+            `__CURLY_${index}__`,
+            `{<span style="color:var(--active-verse); font-weight:bold;">${content}</span>}`
+        );
+    });
 
     return (
         <div

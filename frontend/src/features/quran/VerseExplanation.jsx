@@ -30,7 +30,7 @@ const VerseExplanation = ({ t, lastVerse, arabicLang }) => {
     const hidePrevious = () => surahId === 1 && verseId === 1
 
     return (
-        <div className={'rounded-2xl space-y-2 py-2 px-4 bg-[var(--light-bg)]'}>
+        <div className={'rounded-2xl space-y-2 py-2 px-2 md:px-4 bg-[var(--light-bg)]'}>
             <div className={'bg-[var(--second-bg)] rounded-lg px-4 py-2'}>
                 <div className={`flex sm:justify-end items-center justify-center scholars-list
                      ${noTafsirForThatLang && '!justify-between flex-row'}`}

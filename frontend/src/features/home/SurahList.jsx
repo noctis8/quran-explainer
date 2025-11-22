@@ -125,7 +125,7 @@ const SurahList = () => {
                                     </div>
 
                                     {/* Arrow Indicator */}
-                                    <div className={`opacity-0 group-hover:opacity-100 transition-all duration-300 text-[var(--active-verse)] ${textDirection === "rtl" ? 'order-1' : 'order-2'}`}>
+                                    <div className={`opacity-0 group-hover:opacity-100 transition-all duration-300 text-[var(--third)] ${textDirection === "rtl" ? 'order-1' : 'order-2'}`}>
                                         {textDirection === "rtl" ? <ChevronLeft size={20} /> : <ChevronRight size={20} />}
                                     </div>
                                 </div>

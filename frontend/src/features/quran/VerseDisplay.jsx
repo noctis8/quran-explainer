@@ -24,7 +24,8 @@ const VerseDisplay = ({
         const chapterMap = new Map(chapters.map(c => [Number(c.id), c]));
         return (chapterId) => {
             const chapter = chapterMap.get(Number(chapterId));
-            return chapter?.translated_name?.name || chapter?.name_arabic || `chapter ${chapterId}`;
+            console.log(chapter);
+            return selectedLanguage === "ar" ? chapter?.name_arabic : chapter?.translated_name?.name || chapter?.name_arabic || `chapter ${chapterId}`;
         };
     }, [chapters]);
 
@@ -78,7 +79,7 @@ const VerseDisplay = ({
         const chapterName = getChapterName(chapterId);
 
         return (
-            <h3 className={`${selectedLanguage === "ar" ? 'arabic-font' : ''} bg-[var(--bg)] max-w-[70%] lg:max-w-[50%] mx-auto text-center font-bold py-1 mb-2 mt-1 text-[var(--second)] rounded-xl`}>
+            <h3 className={`${selectedLanguage === "ar" ? 'arabic-font' : ''} bg-[var(--bg)] max-w-[70%] lg:max-w-[50%] mx-auto text-center font-bold pt-1 mb-2 mt-1 text-[var(--second)] rounded-xl`}>
                 {chapterName}
             </h3>
         );
