@@ -175,10 +175,14 @@ button {
 /* Skeleton loader animation */
 @keyframes skeleton-shimmer {
     0% {
+        opacity: 0.7;
+        background-color: var(--third-bg);
+    }
+    30% {
         opacity: 1;
         background-color: var(--fourth-bg);
     }
-    70% {
+    100% {
         opacity: 0.7;
         background-color: var(--third-bg);
     }
